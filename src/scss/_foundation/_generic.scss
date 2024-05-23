@@ -1,0 +1,82 @@
+@use 'sass:math';
+@use '../_foundation/mixin' as *;
+
+// ========================================
+// Generic
+// ========================================
+
+// --------------------
+// ress
+// --------------------
+
+@use 'node_modules/ress/dist/ress.min.css';
+
+// --------------------
+// Original
+// --------------------
+
+* {
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  background: {
+    repeat: no-repeat;
+  }
+}
+
+html {
+  overflow-y: scroll;
+  font-weight: 400;
+  font-size: 62.5%;
+  @supports (-webkit-touch-callout: none) {
+    height: -webkit-fill-available;
+  }
+}
+
+body {
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
+  font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  @supports (-webkit-touch-callout: none) {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+a,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  text-decoration: none;
+  color: inherit;
+}

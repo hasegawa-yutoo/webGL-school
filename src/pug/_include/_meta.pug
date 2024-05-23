@@ -1,0 +1,36 @@
+if site[directory].ogp
+  - var ogp= site[directory].ogp;
+else
+  - var ogp= site.siteImage;
+
+meta(charset='UTF-8')
+meta(http-equiv='X-UA-Compatible' content='IE=edge')
+meta(name='viewport', content=site.viewport)
+meta(name='robots', content='index,follow')
+meta(name='format-detection', content='telephone=no')
+
+meta(name='description', content=site[directory].description)
+
+meta(name='twitter:card', content=site.twitterCard)
+meta(name='twitter:image', content=site.url + ogp)
+meta(name='twitter:url', content=site.url + directory)
+meta(name='twitter:description', content=site[directory].description)
+meta(name='twitter:title', content=site[directory].name)
+
+meta(property='og:description', content=site[directory].description)
+meta(property='og:site_name', content=site.name)
+meta(property='og:locale', content=site.locale)
+meta(property='og:type', content=type)
+meta(property='og:image', content=site.url + ogp)
+meta(property='og:url', content=site.url + directory)
+meta(property='og:title', content=site[directory].name)
+title #{site[directory].name}
+link(rel='shortcut icon', href='/assets/img/favicon.ico')
+link(rel="icon" type="image/vnd.microsoft.icon" href="/assets/img/favicon.ico")
+link(rel='apple-touch-icon', sizes="180x180", href='/assets/img/apple-touch-icon-180x180.jpg')
+link(rel='apple-touch-icon', sizes="192x192", href='/assets/img/apple-touch-icon-192x192.jpg')
+
+if site[directory].canonical
+  link(rel='canonical', href=site[directory].canonical)
+if site[directory].alternate
+  link(rel='alternate', href=site[directory].alternate, media='only screen and (max-width: 640px)')

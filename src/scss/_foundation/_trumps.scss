@@ -1,0 +1,109 @@
+@use 'sass:math';
+@use '../_foundation/mixin' as *;
+
+// ========================================
+// Trumps
+// prefix: t-
+// ========================================
+
+// --------------------
+// Display
+// --------------------
+
+.t-br {
+  display: block;
+}
+
+.t-ib {
+  display: inline-block;
+}
+
+.t-hidden {
+  display: none;
+}
+
+.t-hiddenSp {
+  display: none;
+
+  @include mq() {
+    display: block;
+  }
+}
+
+.t-hiddenPc {
+  @include mq() {
+    display: none;
+  }
+}
+
+// --------------------
+// Text
+// --------------------
+
+.t-taL {
+  text-align: left !important;
+}
+
+.t-taR {
+  text-align: right !important;
+}
+
+.t-taC {
+  text-align: center !important;
+}
+
+@include mq() {
+  .t-taL-pc {
+    text-align: left !important;
+  }
+
+  .t-taR-pc {
+    text-align: right !important;
+  }
+
+  .t-taC-pc {
+    text-align: center !important;
+  }
+}
+
+.t-bold {
+  font-weight: 600 !important;
+}
+
+.t-italic {
+  font-style: italic !important;
+}
+
+.t-ttU {
+  text-transform: uppercase !important;
+}
+
+.t-ttL {
+  text-transform: lowercase !important;
+}
+
+.t-caution-color {
+  color: var(--caution-color);
+}
+
+// --------------------
+// Margin
+// --------------------
+
+.t-mt0 {
+  margin-top: 0 !important;
+}
+
+// --------------------
+// Accessibility
+// --------------------
+.t-visuallyHidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}

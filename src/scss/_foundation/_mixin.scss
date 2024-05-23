@@ -1,0 +1,39 @@
+@use 'sass:math';
+
+// media query
+$breakpoint-up: (
+  // min-width
+  'sm': 'screen and (min-width: 400px)',
+  'md': 'print, screen and (min-width: 769px)',
+  'lg': 'print, screen and (min-width: 992px)',
+  'xl': 'print, screen and (min-width: 1221px)',
+  'xxl': 'print, screen and (min-width: 1600px)'
+) !default;
+$breakpoint-down: (
+  // max-width
+  'sm': 'screen and (max-width: 399px)',
+  'md': 'screen and (max-width: 768px)',
+  'lg': 'screen and (max-width: 991px)',
+  'xl': 'screen and (max-width: 1220px)',
+  'xxl': 'screen and (max-width: 1559px)'
+) !default;
+@mixin mq($breakpoint: md) {
+  //メインで使用するブレイクポイントを指定
+  @media #{map-get($breakpoint-up, $breakpoint)} {
+    @content;
+  }
+}
+@mixin mq-down($breakpoint: md) {
+  //メインで使用するブレイクポイントを指定
+  @media #{map-get($breakpoint-down, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin hover() {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "url": "https://sample.com",
+  "name": "COMPANY NAME",
+  "viewport": "width=device-width",
+  "description": "description",
+  "lang": "ja",
+  "locale": "ja_JP",
+  "siteImage": "/assets/img/common/ogp.jpg",
+  "twitterCard": "summary_large_image",
+  "/001/": {
+    "name": "WebGL School 001",
+    "description": "description",
+    "ogp": "/assets/img/common/ogp.jpg",
+    "canonical": "https:/sample.comm"
+  }
+}

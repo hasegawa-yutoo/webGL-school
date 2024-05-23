@@ -1,0 +1,22 @@
+@use 'sass:math';
+@use '../_foundation/mixin' as *;
+
+.m-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(xxl) {
+    max-width: 1120px;
+  }
+}
+
+.l-header {
+
+}
+
+
+.l-footer {
+
+}

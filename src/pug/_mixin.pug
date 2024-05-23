@@ -1,0 +1,32 @@
+mixin picture(path_pc, path_sp, alt_text, width, height)
+  //- path_spが指定されていない場合、path_pcをpath_spとして使用
+  - path_sp = path_sp || path_pc
+  picture
+    source(media="(min-width: 769px)" srcset=path_pc + ".avif", type="image/avif")
+    source(media="(min-width: 769px)" srcset=path_pc + ".webp", type="image/webp")
+    source(srcset=path_sp + ".avif", type="image/avif")
+    img(src=path_sp + ".webp", alt=alt_text, width=width, height=height)
+
+//- 使用例1: PCとSPで異なる画像を使用する場合
+//- +picture("/assets/img/top/img-mv1_pc", "/assets/img/top/img-mv1_sp", "alt text sample", "10", "20")
+
+//- 使用例2: PCとSPで同じ画像を使用する場合
+//- +picture("/assets/img/top/img-mv1", null, "alt text sample", "10", "20")
+
+//- パンくずリスト
+mixin bread(data = [])
+  unless data == ''
+    .c-bread(class= page == "concept" ? "-is-concept" : "")
+      ol.c-bread_container(itemscope itemtype="https://schema.org/BreadcrumbList")
+        li.c-bread_list(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+          a(href="/" itemprop="item") TOP
+          meta(itemprop="position" content="1")
+        each crumb, i in data
+          - var position = i + 2;
+          li.c-bread_list(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+            if crumb.path
+              a(href=crumb.path itemprop="item") !{crumb.label}
+              meta(itemprop="position" content=position)
+            else
+              span(itemprop="item") !{crumb.label}
+              meta(itemprop="position" content=position)

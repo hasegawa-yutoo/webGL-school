@@ -1,0 +1,477 @@
+@charset "UTF-8";
+html {
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+  word-break: normal;
+}
+
+*, :after, :before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+
+:after, :before {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  color: inherit;
+  height: 0;
+  overflow: visible;
+}
+
+details, main {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+small {
+  font-size: 80%;
+}
+
+[hidden] {
+  display: none;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active, a:hover {
+  outline-width: 0;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+}
+
+pre {
+  font-size: 1em;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+table {
+  border-color: inherit;
+  text-indent: 0;
+}
+
+iframe {
+  border-style: none;
+}
+
+input {
+  border-radius: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+button, input, optgroup, select, textarea {
+  font: inherit;
+}
+
+optgroup {
+  font-weight: 700;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+[role=button], [type=button], [type=reset], [type=submit], button {
+  cursor: pointer;
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: button;
+}
+
+button, input, select, textarea {
+  background-color: transparent;
+  border-style: none;
+}
+
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+  outline-width: 0;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select::-ms-value {
+  color: currentColor;
+}
+
+legend {
+  border: 0;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  color: inherit;
+  font: inherit;
+}
+
+[disabled] {
+  cursor: default;
+}
+
+img {
+  border-style: none;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[aria-busy=true] {
+  cursor: progress;
+}
+
+[aria-controls] {
+  cursor: pointer;
+}
+
+[aria-disabled=true] {
+  cursor: default;
+}
+
+* {
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  background-repeat: no-repeat;
+}
+
+html {
+  overflow-y: scroll;
+  font-weight: 400;
+  font-size: 62.5%;
+}
+@supports (-webkit-touch-callout: none) {
+  html {
+    height: -webkit-fill-available;
+  }
+}
+
+body {
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
+  font-family: "Noto Sans JP", "Roboto", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+@supports (-webkit-touch-callout: none) {
+  body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+a,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+.t-br {
+  display: block;
+}
+
+.t-ib {
+  display: inline-block;
+}
+
+.t-hidden {
+  display: none;
+}
+
+.t-hiddenSp {
+  display: none;
+}
+
+.t-taL {
+  text-align: left !important;
+}
+
+.t-taR {
+  text-align: right !important;
+}
+
+.t-taC {
+  text-align: center !important;
+}
+.t-bold {
+  font-weight: 600 !important;
+}
+
+.t-italic {
+  font-style: italic !important;
+}
+
+.t-ttU {
+  text-transform: uppercase !important;
+}
+
+.t-ttL {
+  text-transform: lowercase !important;
+}
+
+.t-caution-color {
+  color: var(--caution-color);
+}
+
+.t-mt0 {
+  margin-top: 0 !important;
+}
+
+.t-visuallyHidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
+:root {
+  --color-main: #004CBD;
+  --color-black: #000;
+  --color-white: #fff;
+  --font-jp: "Noto Sans JP", sans-serif;
+  --font-en: "Roboto", sans-serif;
+}
+
+.m-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  position: relative;
+  width: 100%;
+}
+
+#start,
+#restart {
+  position: fixed;
+  top: 80vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3f18a1;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+#start.is-hidden,
+#restart.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#restart {
+  position: static;
+  margin: 0 auto;
+  transform: translate(0);
+  background-color: #c01d40;
+  margin-bottom: 20vh;
+}
+
+.scrolldown1 {
+  /*描画位置※位置は適宜調整してください*/
+  position: absolute;
+  left: 50%;
+  top: calc(100vh - 100px);
+  /*全体の高さ*/
+  height: 100px;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.scrolldown1.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown1 span {
+  /*描画位置*/
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -30px;
+  /*テキストの形状*/
+  color: #c01d40;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+}
+
+/* 線の描写 */
+.scrolldown1::after {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  top: 100px;
+  /*線の形状*/
+  width: 2px;
+  height: 50px;
+  background: #c01d40;
+  /*線の動き1.4秒かけて動く。永遠にループ*/
+  animation: pathmove 1.4s ease-in-out infinite;
+  opacity: 0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 60px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: 100px;
+    opacity: 0;
+  }
+}
+@media print, screen and (min-width: 769px){
+  .t-hiddenSp {
+    display: block;
+  }
+  .t-hiddenPc {
+    display: none;
+  }
+  .t-taL-pc {
+    text-align: left !important;
+  }
+  .t-taR-pc {
+    text-align: right !important;
+  }
+  .t-taC-pc {
+    text-align: center !important;
+  }
+}
+@media print, screen and (min-width: 1600px){
+  .m-wrapper {
+    max-width: 1120px;
+  }
+}

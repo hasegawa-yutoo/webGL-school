@@ -1,0 +1,14 @@
+extends /_include/_layout
+append variables
+  - var page = 'top'
+  - var directory ='/001/'
+block css
+block js
+
+block body
+  main
+    #webgl(style='width: 100%; height: 100%; overflow: hidden; position: fixed; pointer-events: none; z-index: -1;')
+    .scrolldown1.is-hidden#scroll: span SCROLL
+    div(style='height: 5000px')
+    button#start(type="button") START
+    button#restart(type="button") RESTART
