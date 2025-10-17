@@ -1,6 +1,6 @@
 {
-  "url": "https://sample.com",
-  "name": "COMPANY NAME",
+  "url": "https://webgl-school-c8k.pages.dev",
+  "name": "WebGL School",
   "viewport": "width=device-width",
   "description": "description",
   "lang": "ja",
@@ -11,6 +11,12 @@
     "name": "WebGL School 001",
     "description": "description",
     "ogp": "/assets/img/common/ogp.jpg",
-    "canonical": "https:/sample.comm"
+    "canonical": "https://webgl-school-c8k.pages.dev/001/"
+  },
+  "/002/": {
+    "name": "WebGL School 001",
+    "description": "description",
+    "ogp": "/assets/img/common/ogp.jpg",
+    "canonical": "https://webgl-school-c8k.pages.dev/002/"
   }
 }
